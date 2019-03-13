@@ -1,0 +1,23 @@
+/**index.wxss**/
+
+.image {
+  max-width: 300rpx;
+  max-height: 300rpx;
+  box-shadow: 2rpx 10rpx 10rpx #ccc;
+  border-radius: 15rpx;
+  padding: 30rpx;
+
+}
+
+.container {
+  width: 100%;
+
+}
+
+.wrap {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,17 @@
+/**index.wxss**/
+.view{
+  color:#00A3B2;
+  font-size:38rpx;
+  margin-top:60rpx;
+  padding:50rpx;
+  box-shadow:2rpx  10rpx 10rpx #A5E0E5;
+  border-radius:10rpx;
+}
+.navigator-hover{
+  color:#00A3B2;
+  font-size:38rpx;
+  margin-top:60rpx;
+  padding:50rpx;
+  box-shadow:2rpx  10rpx 10rpx #A5E0E5;
+  border-radius:10rpx;
+}

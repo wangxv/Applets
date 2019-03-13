@@ -1,0 +1,20 @@
+/**index.wxss**/
+.movie-item{
+  width:100%;
+  display:flex;
+  box-sizing:border-box;
+  /* justify-content: center; */
+  align-items:center;
+  margin:40rpx 0rpx;
+  padding:0 10rpx;
+}
+.movie-img{
+ max-width:400rpx;
+ box-shadow:2rpx 10rpx 10rpx #ccc;
+ border-radius:15rpx;
+}
+.movie-desc{
+  margin:0 20rpx;
+  font-size:24rpx;
+  line-height:50rpx;
+}

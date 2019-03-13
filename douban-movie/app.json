@@ -1,0 +1,29 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/top/index",
+    "pages/recentPlay/index",
+    "pages/movieDetails/index",
+    "pages/movieImages/index",
+    "pages/list/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"正在售票"
+      },
+      {
+        "pagePath":"pages/list/index",
+        "text":"其他功能列表"
+      }
+    ]
+  }
+}

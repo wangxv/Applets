@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <scroll-view scroll-y >
+    <view class="wrap">
+        <block wx:for="{{imgAll}}" wx:key="id" >
+            <image lazy-load="{{true}}" class="image" src="{{item.image}}"></image>
+        </block>
+    </view>
+  </scroll-view>
+</view>

@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+<view class="list">
+    <swiper
+    class="swiper"
+    indicator-dots="{{false}}"
+    autoplay="{{true}}"
+    interval="{{5000}}"
+    previous-margin="80rpx"
+    next-margin="80rpx"
+    circular="{{true}}"
+    bindchange="handChange"
+    >
+    <block wx:for="{{movieInfo.basic.actors}}" wx:key="actorId" wx:for-index="index" >
+        <swiper-item class="swiper-item" >
+            <image class="slide-image" src="{{item.img}}" class="slide-image {{current===index?'active':''}}"  />
+            <view class="marginb40"></view>
+            <view>{{item.name}}</view>
+            <view>{{item.roleName}}</view>
+        </swiper-item>
+    </block>
+    </swiper>
+
+</view>
+
+
+    <view class="story">{{movieInfo.basic.story}}</view>
+
+    <!-- <view class="video">
+        <video  class="video" src="{{movieInfo.basic.video.url}}" controls></video>
+    </view> -->
+  
+  <navigator
+    url="/pages/movieImages/index?movieId={{movieId}}"
+    class="view"
+  >
+  查看剧照
+  </navigator>
+</view>

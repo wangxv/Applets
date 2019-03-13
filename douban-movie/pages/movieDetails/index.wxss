@@ -1,0 +1,60 @@
+/**index.wxss**/
+.list{
+  width:100%;
+}
+.swiper {
+  width: 100%;
+  height: 360px;
+  display:flex;
+  align-items:center;
+  margin-top:10px;
+}
+
+.swiper-item {
+  background: #fff;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  font-size:24rpx;
+}
+image {
+  width: 86%;
+  border-radius: 5px;
+  background: #fff;
+  margin: 0 auto;
+  border: 1px solid #d6d6d6;
+  opacity: 0.6;
+  display: block;
+  height: 247px;
+  overflow:auto;
+  border-radius:10px;
+}
+
+image.active {
+  transform: scale(1.15);
+  transition: all 0.2s ease-in 0s;
+  opacity: 1;
+  position:relative;
+  box-shadow:0 16px 40px -20px #000;
+}
+.marginb40{
+  margin-bottom:40rpx;
+}
+.story{
+  font-size:24rpx;
+  line-height:40rpx;
+  padding:20rpx;
+}
+.video{
+  width:100%;
+  height:400rpx;
+}
+.view{
+  color:#00A3B2;
+  font-size:38rpx;
+  margin-top:60rpx;
+  padding:20rpx;
+  box-shadow:2rpx 10rpx 10rpx #eee;
+}

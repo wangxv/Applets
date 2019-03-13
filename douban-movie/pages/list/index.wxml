@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+    <navigator
+    url="/pages/recentPlay/index"
+    hover-class="navigator-hover"
+    class="view"
+  >
+    即将上映
+  </navigator>
+    <navigator
+    url="/pages/top/index"
+    hover-class="navigator-hover"
+    class="view"
+  >
+    最近上映
+  </navigator>
+</view>
