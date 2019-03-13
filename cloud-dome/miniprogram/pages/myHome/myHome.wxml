@@ -1,0 +1,17 @@
+<view>
+    <view class=""></view>
+    <view>
+      <navigator
+        url="/page/navigate/navigate?title=navigate"
+        hover-class="navigator-hover"
+      >
+      新建记忆
+      </navigator>
+      <navigator
+        url="/page/navigate/navigate?title=navigate"
+        hover-class="navigator-hover"
+      >
+      读取记忆
+      </navigator>
+    </view>
+</view>
