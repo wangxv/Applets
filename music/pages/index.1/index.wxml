@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{broadcastLists}}" wx:key="cid">
+    <view class="broad-title">{{item.title}}</view>
+    <view class="list">
+      <view class="channe-item" wx:for="{{item.channellist}}" wx:key="channelId" wx:for-item="channeItem">
+       <view><image class="channe-img" src="{{item.title=='音乐人频道'?channeItem.avatar:channeItem.thumb}}"></image></view>
+       <view class="channe-title">{{channeItem.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>

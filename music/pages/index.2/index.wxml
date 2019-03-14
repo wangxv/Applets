@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{songlist}}" wx:key="cid">
+      <view class="channe-item" wx-if="{{item.thumb}}">
+       <view><image class="channe-img" src="{{item.thumb}}" /></view>
+       <view class="broad-title" >{{item.title}}</view>
+       <view class="channe-title">{{item.artist}}</view>
+    </view>
+  </view>
+</view>

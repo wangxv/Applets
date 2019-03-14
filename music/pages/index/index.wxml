@@ -1,0 +1,13 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{ranklist}}" wx:key="cid">
+    <view class="broad-title">{{item.name}}</view>
+    <view class="list">
+      <view class="channe-item" wx:for="{{item.content}}" wx:key="channelId" wx:for-item="channeItem">
+       <view><image class="channe-img" src="{{channeItem.pic_big}}"></image></view>
+       <view class="channe-title">{{channeItem.album_title}}</view>
+       <view class="channe-title">{{channeItem.author}}</view>
+      </view>
+    </view>
+  </view>
+</view>

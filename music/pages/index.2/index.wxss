@@ -1,0 +1,27 @@
+/**index.wxss**/
+.container{
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap
+}
+.broad-title{
+  font-size:24rpx;
+  text-align:center;
+}
+
+.channe-item{
+  margin-bottom:30rpx;
+  margin-left:20rpx;
+}
+.channe-img{
+  width:300rpx;
+  height:400rpx;
+  border-radius:20rpx;
+  box-shadow: 2rpx 10rpx 10rpx #ccc;
+}
+.channe-title{
+  margin-top:10rpx;
+  font-size:24rpx;
+  text-align:center;
+}
