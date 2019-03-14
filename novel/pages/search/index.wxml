@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="search"> 
+      <input type="text" class="input" bindinput="bindinput" />
+      <button class="search-button" type="primary" bindtap="bindtap">搜索</button>
+    </view>
+    <view class="result-list">
+        <button wx:for="{{resultLists}}" wx:for-index="index" wx:key="index" bindtap="seeDetail" id="{{item}}" class="list-item">
+            {{item}}
+        </button>
+    </view>
+</view>

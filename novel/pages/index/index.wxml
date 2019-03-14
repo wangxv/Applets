@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <view wx:for="{{hotLists}}" wx:key="bid" class="book-item">
+    <view><image class="book-img" src="{{item.book_cover}}"></image> </view>
+    <view class="book-info">
+      <view class="title">{{item.bookname}}</view>
+      <view class="title">{{item.author_name}}</view>
+      <view class="desc">{{item.book_info}}</view>
+    </view>
+  </view>
+</view>
