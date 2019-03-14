@@ -1,16 +1,5 @@
 <!--index.wxml-->
 <view class="container">
-   <scroll-view scroll-y="true" >
-    <view wx:for="{{movieLists}}" wx:key="movieId" class="movie-item"  wx:for-index="movieIndex" style="flex-direction:{{movieIndex%2==1?'row':'row-reverse'}}">
-      <image src="{{item.img}}" alt=""  class="movie-img" id="{{item.movieId}}" bindtap="movieDetail" />
-      <view class="movie-desc">
-      <view >{{item.titleEn}}</view>
-      <view>{{item.titleCn}}</view>
-      <view>{{item.type}}</view>
-      <view>{{item.ratingFinal}}</view>
-      <view>{{item.rYear}}年{{item.rMonth}}月{{item.rDay}}日</view>
-      </view>
-
-    </view>
-   </scroll-view>
+  <button class="button" wx:for-index="index"  wx:for="{{cityLists}}" wx:key="id" id="{{item.id}}" data-name="{{item.n}}" bindtap="clickSearch" 
+  style="background-image: -webkit-gradient(linear, 0 0, 0 bottom, from({{colorLists[index%6][0]}}), to({{colorLists[index%6][1]}}))">{{item.n}}</button>
 </view>

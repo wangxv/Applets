@@ -4,7 +4,8 @@ const app = getApp()
 
 Page({
   data: {
-    movieLists:[]
+    movieLists:[],
+    locationId:''
   },
   //事件处理函数
   bindViewTap: function() {
@@ -12,12 +13,15 @@ Page({
       url: '../logs/logs'
     })
   },
-  onLoad: function () {
+  onLoad: function (option) {
     let _that = this
+    this.setData({
+      locationId:option.locationId
+    })
     wx.request({
       url: 'https://api-m.mtime.cn/Movie/MovieComingNew.api', 
       data: {
-        locationId:290
+        locationId:option.locationId
       },
       methods:'GET',
       header: {
@@ -31,9 +35,8 @@ Page({
     })
   },
   movieDetail(e){
-    console.log(e)
     wx.navigateTo({
-      url: '/pages/movieDetails/index?movieId='+e.target.id
+      url: '/pages/movieDetails/index?movieId='+e.target.id+'&locationId='+this.data.locationId
     })
   }
 

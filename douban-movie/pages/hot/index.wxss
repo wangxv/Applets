@@ -18,11 +18,3 @@
   font-size:24rpx;
   line-height:50rpx;
 }
-.input{
-  width:90%;
-  height:80rpx;
-  border:2rpx solid #ccc;
-  margin:20rpx;
-  box-sizing:border-box;
-  padding:0 10rpx;
-}

@@ -6,7 +6,7 @@
     "pages/recentPlay/index",
     "pages/movieDetails/index",
     "pages/movieImages/index",
-    "pages/city/index",
+    "pages/hot/index",
     "pages/list/index"
   ],
   "window":{
@@ -14,21 +14,5 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
-  },
-  "tabBar":{
-    "list":[
-      {
-        "pagePath":"pages/index/index",
-        "text":"正在售票"
-      },
-      {
-        "pagePath":"pages/city/index",
-        "text":"城市"
-      },
-      {
-        "pagePath":"pages/list/index",
-        "text":"列表"
-      }
-    ]
   }
 }

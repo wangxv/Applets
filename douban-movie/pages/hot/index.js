@@ -19,7 +19,7 @@ Page({
       locationId:option.locationId
     })
     wx.request({
-      url: 'https://api-m.mtime.cn/Showtime/LocationMovies.api', 
+      url: 'https://api-m.mtime.cn/PageSubArea/HotPlayMovies.api', 
       data: {
         locationId:option.locationId
       },
@@ -29,7 +29,7 @@ Page({
       },
       success(res) {
         _that.setData({
-          movieLists:res.data.ms
+          movieLists:res.data.movies
         })
       }
     })

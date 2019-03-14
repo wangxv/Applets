@@ -22,7 +22,7 @@ Page({
     wx.request({
       url: 'https://ticket-api-m.mtime.cn/movie/detail.api', 
       data: {
-        locationId:290,
+        locationId:option.locationId,
         movieId:option.movieId
       },
       methods:'GET',
@@ -30,7 +30,6 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success(res) {
-        console.log(res.data.data)
         _that.setData({
           movieInfo:res.data.data
         })

@@ -1,21 +1,21 @@
 <!--index.wxml-->
 <view class="container">
     <navigator
-    url="/pages/recentPlay/index"
+    url="/pages/recentPlay/index?locationId={{locationId}}"
     hover-class="navigator-hover"
     class="view"
   >
     即将上映
   </navigator>
     <navigator
-    url="/pages/top/index"
+    url="/pages/top/index?locationId={{locationId}}"
     hover-class="navigator-hover"
     class="view"
   >
     最近上映
   </navigator>
     <navigator
-    url="/pages/index/index"
+    url="/pages/hot/index?locationId={{locationId}}"
     hover-class="navigator-hover"
     class="view"
   >
