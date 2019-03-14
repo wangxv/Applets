@@ -11,7 +11,7 @@
 .movie-img{
  max-width:400rpx;
  box-shadow:2rpx 10rpx 10rpx #ccc;
- border-radius:15rpx;
+ border-radius:50%;
 }
 .movie-desc{
   margin:0 20rpx;

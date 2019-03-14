@@ -31,7 +31,6 @@ Page({
     })
   },
   movieDetail(e){
-    console.log(e)
     wx.navigateTo({
       url: '/pages/movieDetails/index?movieId='+e.target.id
     })

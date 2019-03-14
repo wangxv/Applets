@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    movieLists:[{}]
+    movieLists:[]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -25,9 +25,15 @@ Page({
       },
       success(res) {
         _that.setData({
-          movieLists:res.data.ms
+          movieLists:res.data.moviecomings
         })
       }
+    })
+  },
+  movieDetail(e){
+    console.log(e)
+    wx.navigateTo({
+      url: '/pages/movieDetails/index?movieId='+e.target.id
     })
   }
 

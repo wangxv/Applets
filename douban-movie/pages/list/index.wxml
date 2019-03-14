@@ -14,4 +14,11 @@
   >
     最近上映
   </navigator>
+    <navigator
+    url="/pages/index/index"
+    hover-class="navigator-hover"
+    class="view"
+  >
+    正在售票
+  </navigator>
 </view>

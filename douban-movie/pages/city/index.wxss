@@ -11,10 +11,18 @@
 .movie-img{
  max-width:400rpx;
  box-shadow:2rpx 10rpx 10rpx #ccc;
- border-radius:65rpx 65rpx 0 0;
+ border-radius:15rpx;
 }
 .movie-desc{
   margin:0 20rpx;
   font-size:24rpx;
   line-height:50rpx;
+}
+.input{
+  width:90%;
+  height:80rpx;
+  border:2rpx solid #ccc;
+  margin:20rpx;
+  box-sizing:border-box;
+  padding:0 10rpx;
 }

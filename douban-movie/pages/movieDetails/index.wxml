@@ -5,7 +5,7 @@
     class="swiper"
     indicator-dots="{{false}}"
     autoplay="{{true}}"
-    interval="{{5000}}"
+    interval="{{3000}}"
     previous-margin="80rpx"
     next-margin="80rpx"
     circular="{{true}}"

@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+
+    <!-- <select name="" id="">
+      <option wx:for="{{cityLists}}" wx:key="id" value="{{item.id}}">{{item.n}}</option>
+    </select> -->
+   <!-- <scroll-view scroll-y="true" >
+    <view wx:for="{{cityLists}}" wx:key="id" class="movie-item" >
+      <view>{{item.n}}</view>
+    </view>
+   </scroll-view> -->
+
+  <view>{{city}}</view>
+  <input type="text" confirm-type="search" class="input" bindinput="bindinput" />
+  <button type="primary" bindtap="clickSearch">搜索</button>
+  
+  <!-- <picker-view
+    indicator-style="height: 50px;"
+    style="width: 100%; height: 50px;"
+    bindchange="bindChange"
+    value="{{value}}"
+  >
+    <picker-view-column>
+      <view wx:for="{{cityLists}}" wx:key="id" id="{{item.id}}" data-name="{{item.n}}" style="line-height: 50px">{{item.n}}</view>
+    </picker-view-column>
+  </picker-view> -->
+</view>

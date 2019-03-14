@@ -1,15 +1,14 @@
 <!--index.wxml-->
 <view class="container">
    <scroll-view scroll-y="true" >
-    <view wx:for="{{movieLists}}" wx:key="movieId" class="movie-item"  wx:for-index="movieIndex" style="flex-direction:{{movieIndex%2==1?'row':'row-reverse'}}">
-      <image src="{{item.img}}" alt=""  class="movie-img" />
+    <view wx:for="{{movieLists}}" wx:key="id" class="movie-item"  wx:for-index="movieIndex" style="flex-direction:{{movieIndex%2==1?'row':'row-reverse'}}">
+      <image src="{{item.image}}" alt=""  class="movie-img" id="{{item.id}}" bindtap="movieDetail" />
       <view class="movie-desc">
-      <view >{{item.tEn}}</view>
-      <view>{{item.tCn}}</view>
-      <view>{{item.movieType}}</view>
-      <view>{{item.r}}</view>
-      <view>{{item.rd}}</view>
-      <view>{{item.commonSpecial}}</view>
+      <view >{{item.title}}</view>
+      <view>{{item.locationName}}</view>
+      <view>{{item.type}}</view>
+      <view>{{item.rYear}}年{{item.rMonth}}月{{item.rDay}}日</view>
+      <view>{{item.releaseDate}}</view>
       </view>
 
     </view>

@@ -6,6 +6,7 @@
     "pages/recentPlay/index",
     "pages/movieDetails/index",
     "pages/movieImages/index",
+    "pages/city/index",
     "pages/list/index"
   ],
   "window":{
@@ -21,8 +22,12 @@
         "text":"正在售票"
       },
       {
+        "pagePath":"pages/city/index",
+        "text":"城市"
+      },
+      {
         "pagePath":"pages/list/index",
-        "text":"其他功能列表"
+        "text":"列表"
       }
     ]
   }

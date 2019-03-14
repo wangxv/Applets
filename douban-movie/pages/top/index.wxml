@@ -2,7 +2,7 @@
 <view class="container">
    <scroll-view scroll-y="true" >
     <view wx:for="{{movieLists}}" wx:key="movieId" class="movie-item"  wx:for-index="movieIndex" style="flex-direction:{{movieIndex%2==1?'row':'row-reverse'}}">
-      <image src="{{item.img}}" alt=""  class="movie-img" />
+      <image src="{{item.img}}" alt="" id="{{item.movieId}}"  class="movie-img" bindtap="movieDetail" />
       <view class="movie-desc">
       <view >{{item.tEn}}</view>
       <view>{{item.tCn}}</view>
