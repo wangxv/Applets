@@ -1,11 +1,25 @@
 <!--index.wxml-->
 <view class="container">
-  <view wx:for="{{hotLists}}" wx:key="bid" class="book-item">
-    <view><image class="book-img" src="{{item.book_cover}}"></image> </view>
-    <view class="book-info">
-      <view class="title">{{item.bookname}}</view>
-      <view class="title">{{item.author_name}}</view>
-      <view class="desc">{{item.book_info}}</view>
+   <picker
+    mode="date"
+    value="{{time}}"
+    start="09:01"
+    end="21:01"
+    class="selectTime"
+    bindchange="bindTimeChange"
+  >
+    <view class="picker">
+      选择某一天的文章
     </view>
+    <view class="picker">
+      {{time}}
+    </view>
+  </picker>
+
+   <view class="title">{{article.title}}</view>
+  <view class="author">{{article.author}}</view>
+  <view class="digest">{{article.digest?article.digest+'...':''}}</view>
+ <view>
+  <rich-text class="content"  nodes="{{article.content}}"></rich-text>
   </view>
 </view>

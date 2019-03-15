@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">{{article.title}}</view>
+  <view class="author">{{article.author}}</view>
+  <view class="digest">{{article.digest}}...</view>
+ <view>
+  <rich-text class="content"  nodes="{{article.content}}"></rich-text>
+  </view>
+</view>

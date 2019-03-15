@@ -19,8 +19,3 @@
 .content{
   font-size:24rpx;
 }
-.selectTime{
-  text-align:left;
-  font-size:24rpx;
-  margin-bottom:30rpx;
-}

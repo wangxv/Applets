@@ -1,0 +1,18 @@
+/**index.wxss**/
+.book-item{
+  width:100%;
+  display:flex;
+  margin-bottom:30rpx;
+}
+.book-img{
+  width:360rpx;
+  border-radius:20rpx;
+  box-shadow:2rpx 10rpx 10rpx #ccc;
+}
+
+.book-info{
+  display:flex;
+  flex-direction: column;
+  margin-left:20rpx;
+  font-size:24rpx;
+}

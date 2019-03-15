@@ -4,28 +4,29 @@ const app = getApp()
 
 Page({
   data: {
-    hotLists:[]
+    article:{},
+    time:''
   },
   //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
+  bindTimeChange(e) {
+    this.setData({
+      time:e.detail.value
+    })
+
+    let _that = this
+    wx.request({
+      url:'https://interface.meiriyiwen.com/article/day',
+      data:{
+        dev:1,
+        date:e.detail.value.replace(/-/g,'')
+      },
+      success:(res)=>{
+        console.log(res)
+       _that.setData({
+        article:res.data.data
+       })
+      }
     })
   },
-  onLoad: function () {
-    let _that = this
-   wx.request({
-     url:'https://www.apiopen.top/novelApi',
-     data:{
 
-     },
-     success:(res)=>{
-       console.log(res)
-      _that.setData({
-        hotLists:res.data.data
-      })
-     }
-   })
-   
-  }
 })
