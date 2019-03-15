@@ -1,11 +1,19 @@
 /**index.wxss**/
 .container{
   padding:20rpx;
+
 }
 .title{
   font-size:28rpx;
   font-weight: bold;
   margin-bottom:10rpx;
+}
+.picker{
+  text-align:center;
+  color:#fff;
+  font-size:24rpx;
+  background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#93E8EA), to(#08F0FA))
+
 }
 .author{
   font-size:24rpx;
@@ -19,15 +27,12 @@
 }
 .content{
   font-size:24rpx;
+  line-height:40rpx;
   text-indent: 2em;
 }
-.navigator-button{
-  width:500rpx;
-  height:80rpx;
-  line-height:80rpx;
-  text-align:center;
-  color:#fff;
-  font-size:28rpx;
-  border-radius:10rpx;
-  background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#93E8EA), to(#08F0FA))
+.selectTime{
+  text-align:left;
+  font-size:24rpx;
+  margin-bottom:30rpx;
+  
 }

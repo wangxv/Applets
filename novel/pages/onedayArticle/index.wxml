@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+   <picker
+    mode="date"
+    value="{{time}}"
+    start="09:01"
+    end="21:01"
+    class="selectTime"
+    bindchange="bindTimeChange"
+  >
+    <button class="picker">
+      选择某一天的文章
+    </button>
+    <view style="test-align:center;">
+      {{time}}
+    </view>
+  </picker>
+
+   <view class="title">{{article.title}}</view>
+  <view class="author">{{article.author}}</view>
+  <view class="digest">{{article.digest?article.digest+'...':''}}</view>
+ <view>
+  <rich-text class="content"  nodes="{{article.content}}"></rich-text>
+  </view>
+</view>

@@ -4,7 +4,7 @@ const app = getApp()
 
 Page({
   data: {
-    info:{}
+    listdata:[]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -22,7 +22,7 @@ Page({
      success:(res)=>{
        console.log(res)
       _that.setData({
-        info:res.data.data
+        listdata:res.data.data
       })
      }
    })

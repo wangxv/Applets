@@ -2,6 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/search/index",
+    "pages/novelTop/index",
+    "pages/onedayArticle/index",
     "pages/logs/logs"
   ],
   "window":{
@@ -14,11 +16,15 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "热门"
+        "text": "每日一文"
       },
       {
         "pagePath": "pages/search/index",
-        "text": "搜索"
+        "text": "小说"
+      },
+      {
+        "pagePath": "pages/novelTop/index",
+        "text": "小说排行"
       }
     ]
   }

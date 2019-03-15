@@ -15,4 +15,8 @@
   flex-direction: column;
   margin-left:20rpx;
   font-size:24rpx;
+  line-height:40rpx;
+}
+.desc{
+  
 }
