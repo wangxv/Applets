@@ -1,6 +1,9 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/musicBroadcasting/index",
+    "pages/musicBroadcastingDetails/index",
+    "pages/musicRankings/index",
     "pages/logs/logs"
   ],
   "window":{
@@ -8,5 +11,25 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页"
+      },
+      {
+        "pagePath":"pages/musicBroadcasting/index",
+        "text":"音乐电台"
+      },
+      {
+        "pagePath":"pages/musicRankings/index",
+        "text":"排行榜"
+      },
+      {
+        "pagePath":"pages/musicBroadcastingDetails/index",
+        "text":"音乐电台详情"
+      }
+    ]
   }
 }

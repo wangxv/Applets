@@ -1,12 +1,21 @@
 <!--index.wxml-->
 <view class="container">
-  <view wx:for="{{ranklist}}" wx:key="cid">
-    <view class="broad-title">{{item.name}}</view>
-    <view class="list">
-      <view class="channe-item" wx:for="{{item.content}}" wx:key="channelId" wx:for-item="channeItem">
-       <view><image class="channe-img" src="{{channeItem.pic_big}}"></image></view>
-       <view class="channe-title">{{channeItem.album_title}}</view>
-       <view class="channe-title">{{channeItem.author}}</view>
+  <input class="input" placeholder="请输入搜索内容" auto-focus bindinput="bindinput" />
+  <button class="search" bindtap="searchMusic" >搜索</button>
+
+  <view class="music-list">
+    <view class="music-item" wx:for="{{musicList}}" wx:key="item.url" >
+      <view>
+        <audio
+          style="font-size:24rpx;"
+          class="audio-item"
+          poster="{{item.pic}}"
+          name="{{item.title}}"
+          author="{{item.author}}"
+          src="{{item.url}}"
+          id="{{'music'+ item.songid}}"
+          controls
+        ></audio>
       </view>
     </view>
   </view>
