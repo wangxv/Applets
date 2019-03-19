@@ -1,0 +1,38 @@
+/**index.wxss**/
+.container{
+  padding:20px;
+
+}
+.title{
+  font-size:28px;
+  font-weight: bold;
+  margin-bottom:10px;
+}
+.picker{
+  text-align:center;
+  color:#fff;
+  font-size:24px;
+  background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#93E8EA), to(#08F0FA))
+
+}
+.author{
+  font-size:24px;
+  margin-bottom:10px;
+}
+.digest{
+  font-size:24px;
+  color:#666;
+  margin-bottom:20px;
+  text-indent: 2em;
+}
+.content{
+  font-size:24px;
+  line-height:40px;
+  text-indent: 2em;
+}
+.selectTime{
+  text-align:left;
+  font-size:24px;
+  margin-bottom:30px;
+  
+}
