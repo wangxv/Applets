@@ -1,0 +1,5 @@
+<view class="custom-bar">
+   <view class="back-button"></view>
+   <view class="bar-title"></view>
+   <view></view>
+</view>
